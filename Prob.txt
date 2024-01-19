@@ -1,0 +1,26 @@
+Algorithme IsPalindrome;
+
+var
+  w1, w2: string;
+  i: Integer;
+
+begin 
+   write('Entrer un mot: ');
+   readln(w1);
+   
+   j=0;
+   if (w1 <> "") then
+    for i from length(w1) to 0 do
+      w2[j]=w1[i];
+      j++;
+    end;
+    if (w1 = w2) then
+      writeln(w1, ' est plaindrome.');
+    else
+      writeln(w1, ' n'est pas plaindrome.');
+    end;
+   else
+     writeln('Entrer un mot valide.');
+   end;
+end;
+     
